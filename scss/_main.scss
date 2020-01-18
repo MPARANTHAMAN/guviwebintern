@@ -1,0 +1,92 @@
+body{
+    background: #CFD8DC;
+}
+.header{
+    display: block;
+}
+input{
+    background: rgba(0,0,0,.8);
+}
+#icon{
+    border-radius: 25px; 
+    width: 10em;
+    height: 4em;
+}
+.dark {
+    background: $bg-clr;
+    transition: 1s all ease;
+}
+nav{
+    background: rgba(0,0,0,.6);
+    box-sizing: border-box;
+    box-shadow: 0px 15px 25px rgba(0,0,0,.5);
+    height: 15%;
+}
+.register-container{ 
+    display: none;
+}
+.login-container{
+    display: inline;
+}
+.table2{
+    display: none;    
+}
+.password{
+    display: none;
+}
+.update{
+    display: none;
+    font: black; 
+}
+.login-box,.login-box1{
+    background: rgba(0,0,0,.8);
+    box-sizing: border-box;
+    box-shadow: 0px 15px 25px rgba(0,0,0,.5);
+    padding: 1.5em;
+    margin-top: 10%;
+    border-radius: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.login-box1{
+    width: 100%;
+    margin-top: 4%;
+    margin-left: 4%;
+    margin-right: 4%;
+    
+    
+}
+@media (min-width:801px) {
+    .login-box1{
+        transform: translate(27%, );
+        width: 60%;
+    }
+    
+}
+@media only screen and (max-width: 768px){
+    .header{
+        margin-top: -7% ;
+
+    }
+}
+button{
+    background-color: $btn-color !important;
+    border: 0 !important;
+    border-radius: 17px !important;
+    width: 11em !important;
+    transform: translate(15%);
+    font-size: 1.4em !important;
+    margin: 2px !important;
+    letter-spacing: 3px !important;
+    
+}
+
+input{
+    border-radius: 25px !important;
+    font-size: 16px !important;
+    color: #fff !important;
+    border: none;
+  
+    background-color: transparent !important;
+    
+}

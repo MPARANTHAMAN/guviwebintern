@@ -1,0 +1,44 @@
+#switch {
+    top: 0;
+    visibility: hidden;
+    width: 100%;
+    border-color: #212121;
+    border-width: 20%;
+}
+.switch-label {  
+    display: block;
+    width: 6.25em;
+    height: 1.875em;
+    border: 1px solid #ccc;
+    border-radius: 3.125em;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s all ease;
+}
+
+.switch-label .toggle {
+    left: 0;
+    width: 1.5625em;
+    height: 1.5625em;
+    border-radius: 1.5625em;
+    background-color: $toggle-btn;
+    position: absolute;
+    left: 0.1875em;
+    transition: .5s all ease;
+}
+
+#switch:checked ~ .switch-label {
+    background: $toggle-btn;
+    border: none;
+    transition: .5s all ease;
+}
+
+#switch:checked ~ .switch-label .toggle {
+    height: 0.78125em;
+    padding-top: 24px;
+    border-radius: 25px 25px 0 0;
+    background: transparent;
+    box-shadow: 0 -6px 0 0 #fff;
+    transform: scale(0.9) translateX(56px) rotate(90deg);
+    transition: .7s all ease;
+}
